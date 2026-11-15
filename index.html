@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NUMEN — Guiones, edición y estrategia de contenido</title>
+  <meta name="description" content="NUMEN transforma tus ideas en contenido con identidad: guiones claros, videos cuidados y una comunicación pensada para tu negocio.">
+  <meta name="theme-color" content="#0b0b0a">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:title" content="NUMEN — Guiones, edición y estrategia de contenido">
+  <meta property="og:description" content="Tu marca tiene algo que decir. Hagamos que se vea.">
+  <meta property="og:image" content="https://deboragomezpe-gif.github.io/numen/assets/img/og-numen.jpg">
+  <meta property="og:url" content="https://deboragomezpe-gif.github.io/numen/">
+  <link rel="canonical" href="https://deboragomezpe-gif.github.io/numen/">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="apple-touch-icon" href="assets/img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Saltar al contenido</a>
+
+  <header class="site-header" id="top">
+    <div class="wrap header-inner">
+      <a href="#top" class="brand" aria-label="NUMEN, volver al inicio">
+        <img src="assets/img/numen-logo.png" alt="NUMEN" width="600" height="145">
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav">
+        <span class="menu-toggle-bars" aria-hidden="true"></span>
+        <span class="menu-toggle-label">Menú</span>
+      </button>
+      <nav id="nav" class="nav" aria-label="Principal">
+        <ul>
+          <li><a href="#trabajos">Trabajos</a></li>
+          <li><a href="#caso">Caso</a></li>
+          <li><a href="#planes">Planes</a></li>
+          <li><a href="#proceso">Proceso</a></li>
+          <li><a href="#sobre">Sobre mí</a></li>
+          <li><a href="#faq">Preguntas</a></li>
+        </ul>
+        <a class="btn btn-light btn-sm" data-wa href="#">WhatsApp</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- 1. Portada -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow" data-t="portada.etiqueta"></p>
+          <h1 id="hero-title" data-t="portada.titulo"></h1>
+          <p class="lead" data-t="portada.texto"></p>
+          <div class="actions">
+            <a class="btn btn-light" href="#trabajos" data-t="portada.botonTrabajos"></a>
+            <a class="btn btn-outline-light" data-wa href="#" data-t="contacto.ctaPrincipal"></a>
+          </div>
+        </div>
+        <figure class="hero-photo">
+          <picture>
+            <source type="image/webp" srcset="assets/img/debora-portada-600.webp 600w, assets/img/debora-portada-1086.webp 1086w" sizes="(min-width: 900px) 42vw, 100vw">
+            <img src="assets/img/debora-portada-1086.jpg" srcset="assets/img/debora-portada-600.jpg 600w, assets/img/debora-portada-1086.jpg 1086w" sizes="(min-width: 900px) 42vw, 100vw" width="1086" height="1448" alt="Débora, fundadora de NUMEN, sentada en un estudio negro con una laptop sobre las piernas, hablando por teléfono." fetchpriority="high">
+          </picture>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 2. Trabajos -->
+    <section id="trabajos" class="section section-light" aria-labelledby="trabajos-title">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="eyebrow">Trabajos seleccionados</p>
+          <h2 id="trabajos-title" data-t="trabajos.titulo"></h2>
+        </header>
+
+        <div class="filters" role="group" aria-label="Filtrar trabajos por categoría" id="filters"></div>
+        <ul class="video-grid" id="video-grid"></ul>
+        <div class="more">
+          <button type="button" class="btn btn-dark" id="show-all" aria-controls="video-grid" aria-expanded="false">Ver todos los videos</button>
+        </div>
+
+        <article class="carousel-project" id="carrusel" aria-labelledby="carrusel-title">
+          <div class="carousel-info">
+            <p class="eyebrow" data-t="trabajos.carrusel.etiqueta"></p>
+            <h3 id="carrusel-title" data-t="trabajos.carrusel.titulo"></h3>
+            <div class="carousel-controls">
+              <button type="button" class="icon-btn" data-dir="-1" aria-label="Diapositiva anterior">←</button>
+              <p class="carousel-count" aria-live="polite"><span id="slide-now">1</span> / <span id="slide-total">7</span></p>
+              <button type="button" class="icon-btn" data-dir="1" aria-label="Diapositiva siguiente">→</button>
+            </div>
+          </div>
+          <div class="carousel-track" id="carousel-track" tabindex="0" role="region" aria-roledescription="carrusel" aria-label="Diapositivas del carrusel. Usá las flechas para avanzar."></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 3. Caso Selene -->
+    <section id="caso" class="section section-dark" aria-labelledby="caso-title">
+      <div class="wrap case-grid">
+        <div class="case-copy">
+          <p class="eyebrow" data-t="caso.etiqueta"></p>
+          <h2 id="caso-title" data-t="caso.titulo"></h2>
+          <p class="lead" data-t="caso.texto"></p>
+          <ul class="roles" id="case-roles"></ul>
+          <div id="case-metrics"></div>
+        </div>
+        <ul class="case-videos" id="case-videos"></ul>
+      </div>
+    </section>
+
+    <!-- 4. Planes -->
+    <section id="planes" class="section section-light" aria-labelledby="planes-title">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="eyebrow">Planes</p>
+          <h2 id="planes-title" data-t="planes.titulo"></h2>
+          <p class="lead" data-t="planes.intro"></p>
+        </header>
+        <div class="plans" id="plans"></div>
+      </div>
+    </section>
+
+    <!-- 5. Proceso -->
+    <section id="proceso" class="section section-paper" aria-labelledby="proceso-title">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="eyebrow">Proceso</p>
+          <h2 id="proceso-title" data-t="proceso.titulo"></h2>
+        </header>
+        <ol class="steps" id="steps"></ol>
+      </div>
+    </section>
+
+    <!-- 6. Sobre Débora -->
+    <section id="sobre" class="section section-gray" aria-labelledby="sobre-title">
+      <div class="wrap about-grid">
+        <figure class="about-photo">
+          <picture>
+            <source type="image/webp" srcset="assets/img/debora-presentacion-600.webp 600w, assets/img/debora-presentacion-1086.webp 1086w" sizes="(min-width: 900px) 40vw, 100vw">
+            <img src="assets/img/debora-presentacion-1086.jpg" srcset="assets/img/debora-presentacion-600.jpg 600w, assets/img/debora-presentacion-1086.jpg 1086w" sizes="(min-width: 900px) 40vw, 100vw" width="1086" height="1448" loading="lazy" alt="Débora de pie sobre fondo gris, sonriendo mientras usa una laptop.">
+          </picture>
+        </figure>
+        <div class="about-copy">
+          <p class="eyebrow">Sobre mí</p>
+          <h2 id="sobre-title" data-t="sobre.titulo"></h2>
+          <p class="lead" data-t="sobre.texto"></p>
+          <p class="about-links">
+            <a data-ig="personal" href="#" target="_blank" rel="noopener"></a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. FAQ -->
+    <section id="faq" class="section section-light" aria-labelledby="faq-title">
+      <div class="wrap faq-grid">
+        <header class="section-head">
+          <p class="eyebrow">FAQ</p>
+          <h2 id="faq-title" data-t="faq.titulo"></h2>
+        </header>
+        <div class="faq" id="faq-list"></div>
+      </div>
+    </section>
+
+    <!-- 8. Cierre -->
+    <section id="contacto" class="section section-dark closing" aria-labelledby="cierre-title">
+      <div class="wrap">
+        <h2 id="cierre-title" data-t="cierre.titulo"></h2>
+        <p class="lead" data-t="cierre.texto"></p>
+        <div class="actions">
+          <a class="btn btn-light" data-wa href="#" data-t="contacto.ctaPrincipal"></a>
+          <a class="btn btn-outline-light" data-ig="marca" href="#" target="_blank" rel="noopener">Instagram</a>
+        </div>
+        <ul class="contact-list">
+          <li><span class="muted">WhatsApp</span> <a data-wa href="#" data-t="contacto.whatsappVisible"></a></li>
+          <li><span class="muted">Instagram de NUMEN</span> <a data-ig="marca" href="#" target="_blank" rel="noopener" data-t="contacto.instagramMarcaUsuario"></a></li>
+          <li><span class="muted">Instagram de Débora</span> <a data-ig="personal" href="#" target="_blank" rel="noopener" data-t="contacto.instagramPersonalUsuario"></a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <img src="assets/img/numen-logo.png" alt="NUMEN" width="600" height="145" loading="lazy">
+      <p data-t="cierre.pie"></p>
+    </div>
+  </footer>
+
+  <!-- Visor de video -->
+  <dialog class="viewer" id="viewer" aria-labelledby="viewer-title">
+    <div class="viewer-inner">
+      <div class="viewer-bar">
+        <div>
+          <p class="viewer-title" id="viewer-title"></p>
+                  </div>
+        <button type="button" class="icon-btn icon-btn-light" id="viewer-close" aria-label="Cerrar video">✕</button>
+      </div>
+      <video id="viewer-video" controls playsinline preload="none"></video>
+    </div>
+  </dialog>
+
+  <script src="content.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
