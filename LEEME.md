@@ -1,7 +1,7 @@
 # NUMEN — Web (primera versión local)
 
 Sitio estático de una sola página: HTML + CSS + JavaScript, sin dependencias ni compilación.
-Publicado en GitHub Pages: https://deboragomezpe-gif.github.io/numen/
+Publicado en https://numencreacion.com/ (GitHub Pages, dominio comprado en DonWeb).
 
 ## Cómo verla en tu compu
 
@@ -67,7 +67,7 @@ Cada video tiene su portada `.jpg` (fotograma real del archivo). Los videos se c
 - **Videos:** no se cargan al abrir la página (solo las portadas). Se reproducen al tocar, en un visor con cierre, Escape y retorno del foco; al cerrar se pausa y se libera el video. Nunca hay autoplay al cargar.
 - **Planes:** sin precios ni monedas. Cada «Consultar este plan» abre WhatsApp con «Hola, quiero consultar por el plan [nombre].»
 - **Tipografía:** Archivo (Google Fonts). Sin internet cae a Helvetica/Arial.
-- **SEO:** título, descripción, Open Graph y `canonical` apuntando a https://deboragomezpe-gif.github.io/numen/. Si se conecta un dominio propio, actualizar esas URLs en `index.html`.
+- **SEO:** título, descripción, Open Graph y `canonical` apuntando a https://numencreacion.com/. El dominio se configura en el archivo `CNAME`.
 
 ## Validación realizada
 
